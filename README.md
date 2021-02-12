@@ -3,7 +3,7 @@ https://lamartm.github.io/web-app-from-scratch-2021/
 
 ## Description
 
-In this project I made a web app with vanilla HTML, CSS & JS and the NASA API. In the web app you can view the pictures the mars rovers send to NASA filtered on date and the specific rover.
+In this project I made a web app with vanilla JS, in which you have an overview of the latest photo's from the martian rovers, and a detail page of every photo. In the detail page you can view information like when the rover launched, which camera its using, how long it has been on Mars etc..
 
 ## Installation
 
