@@ -6,16 +6,38 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Strait&display=swap" rel="stylesheet">
+  <script type="module" src="app.js"></script>
   <title>NASA Web App</title>
 
 </head>
 
 <body>
-    <img id="nasa" src="">
-    <section>
-        <p id="roverName"></p>
-        <p id="date"></p>
-    </section>
+  <div id="stars"></div>
+  <div id="stars2"></div>
+  <div id="stars3"></div>
+
+  <section class="wrapper">
+    <div>
+      <img id="Spirit" src="./images/spirit.jpg">
+      <p>Spirit</p>
+      <p>Inactive</p>
+    </div>
+    <div>
+      <img id="Curiosity" src="./images/curiosity.jpg">
+      <p>Curiosity</p>
+      <p>Active</p>
+    </div>
+    <div>
+      <img id="Opportunity" src="./images/opp.jpg">
+      <p>Opportunity</p>
+      <p>Inactive</p>
+    </div>
+  </section>
+
+  <section class="images" data-route="images"></section>
+    
 </body>
+
 </html>
