@@ -39,7 +39,8 @@ I'll be specifically filtering on Rover and solar time to get the data I want.
 
 ### API Response
 From the endpoint I'm using: https://api.nasa.gov/mars-photos/api/v1/rovers/Curiosity/photos?sol=3000&api_key=6vA8UNxGma5qV8Q3f6Rr7v3vPOMmUhyxQqVwkmLs you get the following JSON object:
-```{
+```
+{
   camera:{
         full_name: "Front Hazard Avoidance Camera",
         id: 20,
