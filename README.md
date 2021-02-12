@@ -16,26 +16,52 @@ Navigate to this map and run the following command:
 To use this project:
 ``` npm run dev ```
 
-## API Source
+## Actor Diagram
+
+## Interaction Diagram
+
+
+## NASA Open API
+For this project I'm using one of the NASA api's (Mars Rover API) to get the data and images from the rovers. The data includes things like which camera was used, the earth date the picture was taken, the date in martian time, landing date and launch date etc.. You're required to get your own key to use this API
 https://api.nasa.gov/
-I'm specifically using the Mars Rover Photos API
 
-<!-- Add a link to your live demo in Github Pages 🌐-->
+### Endpoints
+With the API you can filter with the endpoints which photo's and rover you want. From the following URL https://api.nasa.gov/mars-photos/api/v1/rovers/ you can filter on the following endpoints:
 
-<!-- ☝️ replace this description with a description of your own work -->
+- Camera
+- Solar time
+- Earth date
+- Status
+- Rover
 
-<!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
+I'll be specifically filtering on Rover and solar time to get the data I want.
 
-<!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
+### API Response
+From the endpoint I'm using: https://api.nasa.gov/mars-photos/api/v1/rovers/Curiosity/photos?sol=3000&api_key=6vA8UNxGma5qV8Q3f6Rr7v3vPOMmUhyxQqVwkmLs you get the following JSON object:
+```{
+  camera:{
+        full_name: "Front Hazard Avoidance Camera",
+        id: 20,
+        name: "FHAZ",
+        rover_id: 5,
+       },
+earth_date: "2021-02-11",
+id: 796011,
+img_src: "https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/03028/opgs/edr/fcam/FLB_666315333EDR_F0861218FHAZ00302M_.JPG",
+rover: {
+        id: 5,
+        landing_date: "2012-08-06",
+        launch_date: "2011-11-26",
+        name: "Curiosity",
+        status: "active",
+  }
+}
+```
 
-<!-- Maybe a table of contents here? 📚 -->
+### Rate Limits
+The NASA Api's have an hourly rate limit of:
+- 1,000 requests per hour
 
-<!-- How about a section that describes how to install this project? 🤓 -->
 
-<!-- ...but how does one use this project? What are its features 🤔 -->
 
-<!-- What external data source is featured in your project and what are its properties 🌠 -->
 
-<!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
-
-<!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
