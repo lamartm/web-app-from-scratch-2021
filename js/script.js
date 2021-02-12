@@ -1,4 +1,4 @@
-async function getNasa(d) {
+async function getData(d) {
     let response = await fetch('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=3024&api_key=6vA8UNxGma5qV8Q3f6Rr7v3vPOMmUhyxQqVwkmLs')
     let maxData = await fetch('https://mars-photos.herokuapp.com/api/v1/manifests/' + d)
     let maxInfo = await maxData.json()
