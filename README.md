@@ -17,9 +17,10 @@ To use this project:
 ``` npm run dev ```
 
 ## Actor Diagram
+![actor](https://github.com/lamartm/web-app-from-scratch-2021/blob/master/images/actor.jpg)
 
 ## Interaction Diagram
-
+![interaction](https://github.com/lamartm/web-app-from-scratch-2021/blob/master/images/interaction.jpg)
 
 ## NASA Open API
 For this project I'm using one of the NASA api's (Mars Rover API) to get the data and images from the rovers. The data includes things like which camera was used, the earth date the picture was taken, the date in martian time, landing date and launch date etc.. You're required to get your own key to use this API
