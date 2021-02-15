@@ -1,3 +1,6 @@
+a {
+  text-decoration: none;
+}
 .wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -14,10 +17,10 @@
     margin-top: 0.5em;
     margin-bottom: 0;
 }
-.wrapper div:nth-child(2) p:last-child {
+.wrapper section:nth-child(2) p:last-child {
     color: rgb(42, 168, 3);
 }
-.wrapper div p:last-child {
+.wrapper section p:last-child {
     color: rgb(197, 48, 43);
 }
 .wrapper img {
@@ -29,7 +32,7 @@
     cursor: pointer;
     transform: scale(1.2);
 }
-.wrapper div:nth-child(2) img {
+.wrapper section:nth-child(2) img {
     width: 30em;
     height: 20em;
 }
@@ -81,7 +84,7 @@ body {
   height: 1px;
   background: transparent;
   box-shadow: $shadows-small;
-  animation: animStar 50s linear infinite;
+  animation: animStar 20s linear infinite;
 }
   #stars:after{
     content: " ";
@@ -97,7 +100,7 @@ body {
   height: 2px;
   background: transparent;
   box-shadow: $shadows-medium;
-  animation: animStar 100s linear infinite;
+  animation: animStar 50s linear infinite;
 }  
   #stars2:after{
     content: " ";
@@ -113,7 +116,7 @@ body {
   height: 3px;
   background: transparent;
   box-shadow: $shadows-big;
-  animation	: animStar 150s linear infinite;
+  animation	: animStar 80s linear infinite;
 }  
   #stars3:after{
     content: " ";
@@ -126,9 +129,9 @@ body {
   }
   @keyframes animStar{
   from{
-    transform: translateY(0px);
+    transform: translateY(-2000px);
   }
   to{
-    transform: translateY(-2000px);
+    transform: translateY(0px);
   }
   } 

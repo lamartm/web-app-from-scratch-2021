@@ -1,4 +1,4 @@
-export function createElements(d) {
+export function createElements(data) {
 
     const section = document.querySelector('[data-route=images]')
     
@@ -9,17 +9,8 @@ export function createElements(d) {
     }
     removeAllChildNodes(section)
 
-    d.photos.forEach(item => {
-        const wrapper = document.createElement('div')
-        section.appendChild(wrapper)
-        
-        const imgItem = document.createElement('img')
-        imgItem.src = item.img_src
-        wrapper.appendChild(imgItem)
-
-        const pItem = document.createElement('p')
-        pItem.innerHTML = 'Picture taken: ' + item.earth_date + ' from the ' + item.camera.full_name
-        wrapper.appendChild(pItem)
+    data.photos.forEach(item => {
+        section.insertAdjacentHTML('afterbegin', `<div> <img src='${item.img_src}'> <p> Picture taken: ${item.earth_date} from the ${item. camera.full_name}</p> </div>`)
     })
 
 }

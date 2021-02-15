@@ -8,36 +8,47 @@
   <link rel="stylesheet" href="style/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Strait&display=swap" rel="stylesheet">
+  <script type="module" src="js/routie.min.js"></script>
   <script type="module" src="js/app.js"></script>
   <title>NASA Web App</title>
 
 </head>
 
 <body>
+  
+
+  <div class="wrapper">
+    <section>
+      <a href="#Spirit">
+        <img id="Spirit" src="./images/spirit.jpg">
+        <p>Spirit</p>
+        <p>Inactive</p>
+      </a>
+    </section>
+    <section>
+      <a href="#Curiosity">
+        <img id="Curiosity" src="./images/curiosity.jpg">
+        <p>Curiosity</p>
+        <p>Active</p>
+      </a>
+    </section>
+    <section>
+      <a href="#Opportunity">
+        <img id="Opportunity" src="./images/opp.jpg">
+        <p>Opportunity</p>
+        <p>Inactive</p>
+      </a>
+    </section>
+  </div>
+
   <div id="stars"></div>
   <div id="stars2"></div>
   <div id="stars3"></div>
-
-  <section class="wrapper">
-    <div>
-      <img id="Spirit" src="./images/spirit.jpg">
-      <p>Spirit</p>
-      <p>Inactive</p>
-    </div>
-    <div>
-      <img id="Curiosity" src="./images/curiosity.jpg">
-      <p>Curiosity</p>
-      <p>Active</p>
-    </div>
-    <div>
-      <img id="Opportunity" src="./images/opp.jpg">
-      <p>Opportunity</p>
-      <p>Inactive</p>
-    </div>
-  </section>
-
+  
   <section class="images" data-route="images"></section>
     
+
+  
 </body>
 
 </html>
