@@ -10,5 +10,9 @@ export async function getData(data) {
     let selectedEndpoint = await fetch(apiURL + data + '/photos?sol=' + maxDateData + apiKey)
     const selectedEndpointJson = await selectedEndpoint.json()
     
-    return (selectedEndpointJson)
+    return (selectedEndpointJson.photos.map(filterData))
+}
+
+function filterData(data) {
+    return {id: data.id, sol: data.sol, camera: data.camera.full_name, img_src: data.img_src, earth_date: data.earth_date, rover: data.rover.name}
 }
